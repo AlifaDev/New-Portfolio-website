@@ -6,6 +6,12 @@
     display: flex;
     background-color:skyblue;
 }
+@media screen and (max-width:550px) {
+    .disply{
+       display: flex; 
+       flex-direction: column;
+    }
+}
 .st{
     margin-top: 200px;
     padding: 80px;
@@ -30,7 +36,6 @@
     padding-left: 100px;
 }
 .logo {
-    /* border: 1px solid transparent; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,15 +44,24 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px #05cded;
 }
-
-
+@media screen and (max-width:550px){
+    .logo{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and(max-width:550px){
+    .service-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
 .logo img{
   
     height:80px ;
     width: 80px;
    padding: 30px;
    transition:1s;
-   
 } 
 .logo img:hover {
     transform: scale(1.4);
@@ -57,7 +71,6 @@
     justify-content: center;
     align-items: center;
     gap: 100px;
-    /* margin:20px 50px; */
     padding: 40px;
 }
 .service-style{
@@ -65,10 +78,9 @@
     height: 480px;
     width: 300px;
     align-content: center;
-    /*  flex-basis: 30%;  */
     border-radius: 20px;
     text-align: center;
-    /* padding-top: 40px;  */
+    margin-right: -40px;
 }
 .service-style img{
     height: 200px;0px ;
@@ -82,18 +94,17 @@
     background-color: #81856b;
     height: 100px;
     width: 100px;
-    margin-top: 10px;
+    margin-top: 100px;
     color: white;
 }
 .style-service{
     background-color: rgba(36, 60, 176, 0.573);
     height: 480px;
-    width: 300px;
+    width: 400px;
     align-content: center;
-    /*  flex-basis: 30%;  */
     border-radius: 20px;
     text-align: center;
-    /* padding-top: 40px;  */
+    
 }
 .style-service img{
     height: 200px;
@@ -112,11 +123,22 @@
     background-color:white;
     height: 50px;
     width: 40px;
-    margin-top: 50px;
+    margin-top: 100px 0px 0px 0px;
     text-align: center;
+    border-radius: 20px;
+}
+.style-service a:hover{
+    background-color: #05cded;
+    transform: scale(1.2);
 }
 .fluid-container{
     display: flex;
+}
+@media screen and (max-width:550px) {
+    .fluid-container{
+       display: flex; 
+       flex-direction: column;
+    }
 }
 .half-width{
     width:50%;
@@ -144,3 +166,4 @@ footer{
     height: 900px;
     width: 900px;
 }
+
